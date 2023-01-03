@@ -20,7 +20,7 @@ print(f'sorted list: {l}')
 l = [5,7,3,1,2]
 print(f'insertion sort \n'
       f'original list: {l}')
-# each i loop squeeze the i th largest figure to the i th right position
+# each i loop squeeze the i th largest figure to the i th position from right
 for i in range(len(l)-1,0,-1):
     for j in range(i):
         if l[j] > l[j+1]:
@@ -33,7 +33,7 @@ print(f'sorted list: {l}')
 l = [5,7,3,1,2]
 print(f'insertion sort \n'
       f'original list: {l}')
-# each i loop finds the i th smallest value
+# each i loop finds the i th smallest value, and put it at the i th position from left
 for i in range(len(l)-1):
     c_min = i
     for j in range(i,len(l)):
