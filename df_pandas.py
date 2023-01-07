@@ -1,7 +1,6 @@
 import pandas as pd
 # import os
 
-
 ################################
 ## adidas market share report ##
 ################################
@@ -49,8 +48,7 @@ df_mkt_share = df_final.drop(columns=['Brand','Peer'])
 df_mkt_share = df_mkt_share.pivot_table(index = ['PRODUCT_GENDER_CLUSTER','MAIN_CATEGORY_CLUSTER']
                                         , columns = 'COUNTRY'
                                         , values = 'Market_Share'
-                                        , aggfunc = 'sum'
-)
+                                        , aggfunc = 'sum')
 
 # reindex columns & rows
 # Countries to be considered
